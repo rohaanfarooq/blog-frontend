@@ -1,0 +1,127 @@
+.column-card-container {
+    position: relative;
+    margin: 0 1rem;
+    width: 100%;
+}
+.column-card {
+    margin-bottom: 2rem;
+    text-decoration: none; 
+    cursor: pointer;
+}
+.my-blogs-dropdown {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    z-index: 1;
+}
+.card-dropdown-menu {
+    position: absolute;
+    top: 3rem;
+    right: -0.75rem;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 12rem;
+    z-index: 1;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45);
+}
+.card-dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+.card-dropdown-menu .card-dropdown-item {
+    display: flex;
+    align-items: center;
+}
+.card-dropdown-icon {
+    color: #fa057b;
+}
+
+.card-dropdown-menu p {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: 0.15s ease;
+    color: #fa057b;
+    margin: 0 1rem;
+}
+.card-dropdown-menu .card-dropdown-item:hover .card-dropdown-icon,
+.card-dropdown-menu .card-dropdown-item:hover p {
+    color: #000;
+}
+
+
+.img-container {
+    width: 100%;
+    height: 16vw;
+}
+
+.img-container>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+.column-card:hover .img-container>img {
+    filter: brightness(0.75);
+}
+.title h3{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    transition: 0.3s ease;
+}
+.title-h3 {
+    color: #000;
+}
+.dark-title-h3 {
+    color: #cacaca;
+}
+
+.column-card:hover .title h3{
+    color: #fa057b;
+}
+
+.desc {
+    font-size: 0.75rem;
+    color: #8a8a8a;
+}
+.dark-desc {
+    color: #a8a8a8;
+}
+
+@media screen and (max-width: 1150px) {
+    .column-card {
+        width: 33vw;
+        margin: 1rem 0;
+    }
+    .img-container {
+        height: 18vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column-card {
+        width: 90vw;
+        margin: 1rem 0;
+    }
+    .img-container {
+        height: 49vw;
+    }
+    .title h3{
+        font-size: 0.85rem;
+        margin: 1rem 0 0.75rem 0;
+    }
+
+    .banner {
+        display: none;
+    }
+    
+}

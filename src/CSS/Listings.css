@@ -1,0 +1,27 @@
+.listings {
+    width: 80%;
+    display: flex;
+}
+
+.left-section {
+    flex: 2;
+    margin-right: 5rem;
+}
+.right-section {
+    flex: 1;
+}
+
+.editors-pick-title>h2{
+    color: #fa057b;
+    text-transform: uppercase;
+    margin: 1.5rem 0 2rem 0;
+}
+
+@media screen and (max-width: 992px){
+   .right-section {
+        display: none;
+   }
+   .left-section {
+    margin-right: 0;
+   } 
+}

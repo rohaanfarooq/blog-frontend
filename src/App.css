@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app{
+  overflow-x: hidden;
+}
+
+.light-app {
+  background-color: #fff;
+}
+.dark-app {
+  background-color: #222;
+}
